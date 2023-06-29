@@ -29,7 +29,7 @@ jobs:
     
     # 権限を与える
     - name: Grant permission gradlew
-      run: chmod +x ./gradlew
+      run: pwd;ls -la; chmod +x ./gradlew
       
     # コマンドラインからAPKの作成。実行前に環境変数をGitHubActionsのSecretから取得
     - name: check APK
