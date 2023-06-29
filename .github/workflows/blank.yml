@@ -18,8 +18,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'
-        distribution: 'temurin'
-        cache: gradle
+        distribution: 'liberica'
     
     # 権限を与える
     - name: Grant permission gradlew
