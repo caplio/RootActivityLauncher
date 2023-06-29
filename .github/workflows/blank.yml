@@ -1,6 +1,9 @@
 name: Generate Release APK
 
 on:
+ push:
+  branches:
+   - master
    # 手動実行ボタン
   workflow_dispatch:
     
