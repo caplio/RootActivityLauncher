@@ -9,8 +9,12 @@ on:
     
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        compile-sdk: [31]
+        build-tools: [30.0.3]
+        root-project-path: [./]
 
     steps:
     
